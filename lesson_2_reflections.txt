@@ -11,3 +11,6 @@ The only problem will be if you have two logical changes that exist in the same 
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 Any major functional change would be a good candidate for a branch. Allowing the code to stay in a known working state and maybe receive any required bug fixes completely outside of any new changes that shouldn't yet go live. This has happened several times to me. Whilst trying to restructure a part of an application in development, a user will report a bug on the live version. I cannot fix the bug and publish it, because the whole file is now different to what the user sees. To be able to work on two versions of the same file, for 2 different reasons is very powerful.
 
+How do the diagrams help you visualize the branch structure?
+Great to see the map, showing that a new commit in detached Head state will not create a branch unless you explicitly tell it to - and otherwise be unreachable.
+
