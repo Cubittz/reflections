@@ -3,3 +3,8 @@ When you run git init, you are creating a hidden folder that will track changes 
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 The staging area is a place to check that what you are going to commit all belongs together, before running the commit. It allows there to be other files in the working directory, that are not necessarily part of the project that you can then ensure aren't committed.
+
+How can you use the staging area to make sure you have one commit per logical change?
+By using git diff we can check that we have only added changes to the staging area that are logically grouped together. They can then be committed at once. We could then add some more files from working dorectory to staging and repeat, keeping them separate.
+The only problem will be if you have two logical changes that exist in the same file. These would have to be committed together.
+
