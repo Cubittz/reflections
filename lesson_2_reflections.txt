@@ -14,3 +14,6 @@ Any major functional change would be a good candidate for a branch. Allowing the
 How do the diagrams help you visualize the branch structure?
 Great to see the map, showing that a new commit in detached Head state will not create a branch unless you explicitly tell it to - and otherwise be unreachable.
 
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Merging will recursively combine all the files in a repository. Starting with the oldest commit (ie where the branch was first created), it will look for edits, additions, deletions on either branch and apply them until there is one new file, including all the changes from both branches. Where both branches have modified the same line, with a different result I think a merge conflict will exist.
+They are shown in the diagram as merging back together so that we know that one of the branches no longer exists, although the commits on it can still be reached.
