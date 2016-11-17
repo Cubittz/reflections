@@ -6,7 +6,7 @@ It allows sharing of files and collaborative working.
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    You need to know what you are working on, so would only want to pull changes when convenient.
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
